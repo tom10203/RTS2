@@ -700,6 +700,8 @@ MonoBehaviour:
   player: {fileID: 496649717}
   rock: {fileID: 18889421834737600, guid: 15c4bb5dfba484f489bd95dbb16c32f2, type: 3}
   maxViewDst: 100
+  noOfChunksX: 5
+  noOfChunksY: 5
 --- !u!1001 &1679340822166605915
 PrefabInstance:
   m_ObjectHideFlags: 0

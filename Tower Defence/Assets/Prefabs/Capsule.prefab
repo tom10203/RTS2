@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 8113471274211737769}
   - component: {fileID: 421796908577162652}
   - component: {fileID: 76136315559320147}
-  - component: {fileID: 779287513861637246}
+  - component: {fileID: 4877296039853010418}
+  - component: {fileID: 803962055535997786}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -108,7 +109,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &779287513861637246
+--- !u!114 &4877296039853010418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,11 +118,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 4676967199231201672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 354cc95dec93d4142909a1aa31b75280, type: 3}
+  m_Script: {fileID: 11500000, guid: bf466e863356ed4478f1c820330f457c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  moveSpeed: 2
-  maxAngle: 135
-  noOfRays: 30
-  rayDist: 6
+  target: {fileID: 0}
+  steps: 50
+  rayLength: 7
+  direction: {x: 0, y: 0, z: 0}
+--- !u!114 &803962055535997786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4676967199231201672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2228b38d242f4841a42c04458b31604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetDirection: {x: 0, y: 0, z: 0}
+  moveSpeed: 4.15
+  RotationSpeed: 1.03

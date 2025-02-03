@@ -8,9 +8,10 @@ public class BoidMovement : MonoBehaviour
     public Vector3 targetDirection;
 
     Boid2 Boid2;
+    Transform player;
 
-    public float moveSpeed;
-    public float RotationSpeed;
+    public float moveSpeed = 6f;
+    public float RotationSpeed = 90f;
     void Start()
     {
         Boid2 = GetComponent<Boid2>();
@@ -32,4 +33,6 @@ public class BoidMovement : MonoBehaviour
     {
         transform.forward = Boid2.direction;
     }
+
+   
 }
